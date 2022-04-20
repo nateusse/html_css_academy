@@ -1,0 +1,120 @@
+/* mouse over link */
+.uno:hover {
+    color: hotpink;
+}
+
+.col-1:hover {
+    background-color: pink;
+    color: white;
+    font-size: 22px;
+}
+
+/* visited link */
+.dos:visited {
+    color: green;
+}
+
+.col-2:hover {
+    background-color: rgb(202, 241, 202);
+    color: white;
+    font-size: 22px;
+}
+
+.tres:active {
+    color: white;
+}
+
+.col-3:hover {
+    background-color: rgb(224, 255, 47);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cuatro>p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.cuatro:hover p {
+    display: block;
+}
+
+:root {
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: rgb(114, 110, 110);
+}
+
+p i:first-child {
+    color: blue;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: bisque;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    color: bisque;
+}
+
+.row {
+    text-align: center;
+    display: flex;
+    flex: 1 1 0px;
+    border: 1px solid white;
+}
+.col-1 , .col-2 , .col-3{
+    flex-basis: 100%
+}
+
+.pseudo-child>p::first-line {
+
+    color: rgb(201, 192, 192);
+    text-transform: uppercase;
+
+}
+
+h4 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.after>p::after {
+
+    content: "→";
+    color: white;
+
+}
+
+.before> p::before {
+    content: "♥";
+    color: aliceblue;
+  }
+
+  ::marker { 
+    color: white;
+    font-size: 23px;
+  }
+
+.select >   ::selection {
+    color: red;
+    background: yellow;
+   
+  }
+  .select{
+    text-align: center;
+  }
+
+  .col-1 > p , .col-3 > p , .col-2 > p{
+      color: aliceblue;
+  }
+
+  .first-letter > ::first-letter{
+      color: white;
+  }

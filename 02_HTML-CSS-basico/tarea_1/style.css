@@ -1,0 +1,87 @@
+.title{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 40px;
+    text-decoration-line:line-through;
+    color: brown;
+
+}
+
+.menu {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    margin: 15px 0 15px;
+}
+.container{
+    border: 3px solid brown;
+    margin: auto;
+    width: 1250px;
+    height: 600px;
+
+}
+
+
+
+.inner_container{
+
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    background-color: lightyellow;
+    
+   
+}
+
+.leftbox {
+    float:left; 
+    width:30%;
+
+    margin:3px 0px 3px 3px;
+    border: 3px solid brown;
+    height: 590px; 
+     
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerbox{
+    
+
+    width:40%;
+    border: 3px solid brown;
+    margin: auto ;
+    height: 50%; 
+   
+   
+   
+    
+}
+
+
+.rightbox{
+    float:inline-end;
+    background-color: lightyellow;
+    width:30%;
+    border: 3px solid brown;
+    margin: auto ;
+    margin:3px 10px 3px 4px;
+    height: 590px;   
+}
+
+
+.footer{
+    text-align: center;
+    color: brown;
+    font-weight:bolder;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+li { float: left; display: block; }

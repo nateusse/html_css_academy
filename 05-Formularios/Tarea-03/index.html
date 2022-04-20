@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body class=" bg-primary">
+    <div class="container bg-white">
+
+        <form action="" class="form-horizontal  m-4 p-4">
+
+            <h1><strong>Registrarte</strong></h1>
+            <p>Es rapido y facil.</p>
+            <hr>
+
+
+            <!-- Campo para filas con nombre y apellido-->
+
+
+            <!-- Campo para solitar nombre-->
+            <div class="form-group">
+
+                <div class="form-row ">
+                    <div class="form-group col-6 ">
+                        <input type="text" class="form-control " id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <!-- Campo para solitar apellido-->
+                    <div class="form-group col-6">
+                        <input type="text" class="form-control " id="nombre" placeholder="Apellido" required>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <!-- Campo para solitar numero celular o comorreo electronico-->
+
+                <div class="col">
+                    <input class="form-control" type="password" id="contresena"
+                        placeholder="Numero de celular o correo electronico" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <!-- Campo para solitar cantraseña nueva-->
+
+                <div class="col">
+                    <input class="form-control" type="password" id="contresena" placeholder="Contraseña nueva" required>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <!-- Campo para fecha-->
+                <label for="date" class="col control-label">Fecha de nacimiento ❔ </label>
+                <div class="col">
+                    <input type="date" id="date" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <!-- Campo para confirmar sexo-->
+                <label for="genero" class="col control-label">Sexo❔ </label>
+            </div>
+            
+            <div class="form-row mb-3 ml-5">
+                <div class="col-2 border m-1 ml-4 p-1">
+                    <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="fav_language" value="mujer">
+            </div>
+            
+            <div class="col-2 border m-1 ml-4  p-1">
+                <label for="css">Hombre</label>
+                <input type="radio" id="hombre" name="fav_language" value="hombre">
+                
+            </div>
+          
+            <div class="col-4 border m-1 ml-4 p-1">
+                <label for="css">Personalizado</label>
+                <input type="radio" id="personalizado" name="fav_language" value="personalizado">
+                
+            </div>
+                
+               
+            </div>
+
+
+            <p>Al hacer clic en "Registrarte" aceptas nuestras <span class="text-primary">Condiciones</span>, la <span
+                    class="text-primary">Politica de datos</span> y la <span class="text-primary">Politica de
+                    cookies</span>.Es posible que le enviemos notificaciones por SMS, que puedes desactivar cuando
+                quieras </p>
+            <div class="col text-center">
+                <input type="submit" class="btn btn-success " value="Registrarte">
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

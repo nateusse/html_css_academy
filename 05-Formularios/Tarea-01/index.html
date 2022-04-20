@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+</head>
+
+<body>
+    <div class="container ">
+        <form action="" class="form-horizontal bg-light m-4 p-4">
+
+
+
+            <!-- Campo para filas con nombre y apellido-->
+
+
+            <!-- Campo para solitar nombre-->
+            <div class="form-group">
+                <label for="nombre" class="col control-label"><strong>Nombre</strong></label>
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <input type="text" class="form-control " id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <!-- Campo para solitar apellido-->
+                    <div class="form-group col-6">
+                        <input type="text" class="form-control " id="nombre" placeholder="Apellidos" required>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <!-- Campo nobmre usuario -->
+                <label for="user-name" class="col control-label"><strong>Nombre de usuario</strong></label>
+                <div class="col">
+                    <input class="form-control" type="mail" id="user-name" placeholder="@gmail.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <!-- Campo para solitar cantraseñas-->
+                <label for="contrasena" class="col control-label"><strong>Contraseña</strong></label>
+                <div class="col">
+                    <input class="form-control" type="password" id="contresena" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <!-- Campo para confirmar cantraseñas-->
+                <label for="contrasena" class="col control-label"><strong>Confirma tu contraseña</strong></label>
+                <div class="col">
+                    <input class="form-control" type="password" id="contresena" required>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <!-- Campo para fecha-->
+                <label for="date" class="col control-label"><strong>Fecha de nacimiento</strong></label>
+                <div class="col">
+                    <input type="month" id="date" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <!-- Campo para confirmar sexo-->
+                <label for="genero" class="col control-label"><strong>Sexo</strong></label>
+            </div>
+            <div class="col">
+                <select name="genero" class="form-control" id="genero">
+                    <option value="0">Selecciona tu genero</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="maculino">Maculino</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <!-- Campo para tel-->
+                <label for="phone" class="col control-label"><strong>Telefono movil</strong></label>
+                <div class="col">
+                    <input type="text" class="form-control" id="phone" required>
+                </div>
+                <br>
+            </div>
+
+
+            <div class="form-group">
+                <!-- Campo para solitar correos-->
+                <label for="email" class="col control-label"><strong>Tu direccion de correo actual</strong></label>
+                <div class="col">
+                    <input class="form-control" class="form-control" type="email" id="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <!-- Campo para ubicacion-->
+                <label for="tel" class="col control-label"><strong>Ubicacion</strong></label>
+                <div class="col">
+                    <select name="tel" id="tel" onchange="">
+                        <option value="colombia" >Colombia</option>
+                        <option value="espana">Espana</option>
+                        <option class="flag-icon-background flag-icon-us" value="usa">United States </option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col text-right">
+                <input type="submit" class="btn btn-primary " value="Siguiente paso">
+            </div>
+
+
+        </form>
+    </div>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+</body>
+                 <label for="country">Ubicacion</label>
+              
+                    <select name="country" onchange="">
+                        <option value="colombia" >Colombia</option>
+                        <option value="espana">Espana</option>
+                        <option value="usa">United States </option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    </select>
+
+</html>
+

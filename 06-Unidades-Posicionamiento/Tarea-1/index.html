@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+    Agregar información sobre turismo
+    implemenar 3 unidades de medidias diferentes (vw  ancho, vh altura,px, .9rem,  % porcentaje)
+    Implementar el posicionamiento relativo (position: realtive, static, fixed, absolute)
+    implementar un boton que permita ocultas y mostrar un elemento con la propiedad display: block - display: none
+    4159891616 --- barra de abogados de san francsco 
+-->
+    <h1>San Francisco</h1>
+    <hr>
+    <div class="container">
+
+        <div class="container-images">
+            <ul class="images">
+                <li><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_c52QkeiT4LdOd6x5QA3KbQ9u377cz4RrA&usqp=CAU">
+                </li>
+                <li><img
+                        src="https://imageio.forbes.com/specials-images/imageserve/692948973/View-Of-Street-In-China-Town--San-Francisco/960x0.jpg?fit=bounds&format=jpg&width=960">
+                </li>
+                <li><img src="https://i.pinimg.com/originals/b0/7c/f8/b07cf8506b3a7c2542f21db7702e31f8.jpg"></li>
+                <li><img
+                        src="https://www.sftravel.com/sites/sftravel.prod.acquia-sites.com/files/field/image/FerryBuilding-web.jpg">
+                </li>
+                <li><img
+                        src="https://d3qvqlc701gzhm.cloudfront.net/thumbs/b0a762501eab02f8955153c20a54b3e5078bfd1c9418dde96e623bbbcd82312e-750.jpg">
+                </li>
+                <li><img
+                        src="https://www.trammellcrow.com/-/media/tcc_hsr/countrytcc/images/bu-icons/tcc_buicon_sf.jpg">
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <p class="flip" onclick="myFunction()">Click to show info about San Francisco</p>
+
+        <div id="rate-result">
+            <p>San Francisco neighborhoods,... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, perferendis.</p>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("rate-result").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

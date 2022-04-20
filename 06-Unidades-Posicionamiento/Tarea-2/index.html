@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+     <style>
+         .container{
+             border: 2px solid blue;
+             position:relative;
+             width: 70vh;
+             height: 70vh;
+             
+         }
+         p{
+             text-align: center;
+         }
+         .box1{
+            border: 1px solid red;
+            width: 30vh;
+            margin: 5px;
+            color: red;
+            
+         }
+         .box2{
+            border: 1px solid green;
+            position:relative;
+            left:50px;
+            top:20px;
+            width: 30vh;
+            color: green;
+         }
+         .box3{
+            border: 1px solid rgb(129, 109, 230);
+            position:static;
+            left:20px;
+            top: 150px;
+            width: 30vh;
+            margin-left: 30px;
+            margin-top: 40px;
+         }
+         .box4{
+            border: 2px solid rgb(238, 109, 238);
+            color:rgb(173, 20, 173);
+            position:sticky;
+            bottom:0px;
+            width: 30vh;
+            margin-top: 10px;
+         }
+     </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>.caja#estatica</p>
+            <p>position:static</p>
+        </div>
+        <div class="box2">
+            <p>.caja#relativa</p>
+            <p>position:relative</p>
+            <p>left:50px</p>
+            <p>top:20px</p>
+        </div>
+        <div class="box3">
+            <p>.caja#estatica</p>
+            <p>position:static</p>
+            <p>left:20px</p>
+
+        </div>
+    </div>
+    <div class="box4">
+        <p>.caja#pegajosa</p>
+        <p>position:sticky</p>
+        <p>bottom:0px</p>
+
+    </div>
+
+</body>
+
+</html>

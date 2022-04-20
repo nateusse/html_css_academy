@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mascotas</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #kimba_photo {
+            width: 400px;
+    
+        }
+
+
+        h2 {
+            color: blue;
+            margin-top: 20px;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        .table{
+            margin: 30px auto 10px auto;
+            table-layout: fixed;
+
+        }
+
+        .cats_table {
+            width: 100%;
+       
+        }
+        
+        .cats_table img{  
+            width:200px; 
+            height:200px;
+        }
+        
+
+        .cats_table > th, td {     
+            border: 3px solid rgb(9, 30, 75);
+            border-collapse: collapse;  /*para 1 linea por texto*/
+        }
+
+        tr:hover {background-color: rgb(100, 170, 250);}
+
+        .lista li:before {
+            content: "😺";
+            margin: 0 16px 0 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+     
+
+    </style>
+</head>
+
+<body>
+    <h1>Kimba</h1>
+    <hr />
+    <img  id="kimba_photo" src="gato.jpeg" alt="gato durmiendo blanco y negro" width="100%">
+    <div class="info">
+        <ul class="lista">
+            <h2>Informacion:</h2>
+            <li>Nombre: Kimba</li>
+            <li>Sexo: Macho</li>
+            <li>Peso: 8.4 pounds</li>
+            <li>Peso in pounds: 6.6 pounds</li>
+            <li>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" >Weight</th>
+                            <th scope="col" >Feeding amount dry foods</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">5 - 9 lbs</td>
+                            <td scope="row">28 - 57 kcal</td>   
+                        </tr>
+                        <tr>
+                            <td scope="row">10 - 14 lbs</td>
+                            <td scope="row">57 - 85 kcal</td>   
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Color: blanco y negro</li>
+            <li>Raza: Mixta</li>
+            <li>Vacunas: Al dia</li>
+        </ul>
+    </div>
+    <h2>Other breeds that are extremly Affectionated as Kimba</h2>
+    <table class="cats_table">
+        <caption>This is a caption inc ase you need it someday</caption>
+        <thead>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 15%;">Bred</th>
+                    <th scope="col">Photo</th> 
+                    <th scope="col">Weight</th>
+                    <th scopte="col">Coat and color</th>
+                </tr>
+                <tr>
+                    <td scope="row">Ragdoll</td>
+                    <td scope="row"><img src="https://thumbs.dreamstime.com/b/adorable-ragdoll-cat-fluffy-grey-tail-blue-bicolor-ragdoll-cat-fluffy-grey-tail-172353416.jpg" alt="Ragdoll cat"  ></td> 
+                    <td scope="row">10 to 20 pounds</td>
+                    <td scope="row">Medium-length, silky plush coat; light-colored body with a darker face, legs, tail, and ears; coat patterns include bi-color, van, mitted, and colorpoint; coat colors include seal, blue, chocolate, lilac, red, and cream; blue eyes</td>
+                </tr>
+                <tr>
+                    <td scope="row">Scottish Fold</td>
+                    <td scope="row"><img src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/scottish-fold-detail.jpg?bust=1535567146&width=355" alt="Ragdoll cat"    ></td> 
+                    <td scope="row">8 to 10 inches</td>
+                    <td scope="row">Bred to have a white coat but can be seen in a variety of colors, commonly calico, tortoiseshell, and tabby patterns; can have short or relatively long hair</td>
+                </tr>
+                <tr>
+                    <td scope="row">Sphynx</td>
+                    <td scope="row"><img src="https://cdna.artstation.com/p/marketplace/presentation_assets/000/821/096/large/file.jpg?1617800504" alt="Ragdoll cat"    ></td> 
+                    <td scope="row">6 to 12 pounds</td>
+                    <td scope="row">Hairless; colors include white, black, red, chocolate, lavender, tabby, tortoiseshell, calico, pointed, and mink</td>
+                </tr>
+                <tr>
+                    <td scope="row">American Shorthair</td>
+                    <td scope="row"><img src="https://i.pinimg.com/originals/43/a2/89/43a289da79a48c79c1bbe8728e0ced3d.jpg" alt="Ragdoll cat"    ></td> 
+                    <td scope="row">6 to 15 pounds</td>
+                    <td scope="row">Shorthaired coat with a wide variety of color possibilities, including white, black, cream, blue, brown, chinchilla, tortoiseshell, cameo, and many more</td>
+                </tr>
+            </thead>
+        </thead>
+    </table>
+</body>
+
+</html>
