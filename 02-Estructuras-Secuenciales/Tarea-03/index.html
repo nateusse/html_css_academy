@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div class="container text-center py-4 bg-primary">
+        <h1 class="display-1 mt-3 ">Grades</h1>
+        <div class="row mt-4">
+            <div class="col-12">
+                <label for="trabajos">Trabajos</label>
+
+                <input type="number" id="trabajos" name="trabajos" min="0" max="5" step=0.01>
+            </div>
+            <div class="col-12">
+                <label for="examen">Examen</label>
+                <input type="number" id="examen" name="examen" min="0" max="5" step=0.01>
+            </div>
+            <div class="col-12">
+                <label for="parciales">Parciales</label>
+                <input type="number" id="parciales" name="parciales" min="0" max="5" step=0.01>
+            </div>
+        </div>
+        <!-- hola soy un comentario-->
+        <button id="btn" onclick="myFunction()" class=" mt-4">Try it</button>
+        <p class="h1 mt-3" id="result">
+    </div>
+    </div>
+    <script>
+
+         /*Un estudiante desea saber cual será su calificación final en la materia de Algoritmos.
+        Dicha calificación se compone de los siguientes porcentajes:
+            55% del promedio de sus tres calificaciones parciales
+            30% de la calificación del examen final
+            15% de la calificación de un trabajo final*/
+
+
+        //let, var y const son variables
+        let parciales;
+        let examen;
+        let  trabajos; //declaracion 
+        //asignacion let parciales=4.5
+        // = asigancion
+        // == son iguales
+        // === 
+
+        //tipos de datos
+        // datos(int, float, string , boolean )
+        // Sacar negativos de todos los numeros positivos.
+        // Que es un algoritmo, secuencia de pasos.
+        //Que me piden, en un algoritmo (entrada y salida) 
+        // Algoritmo apra diferiencias negativos de positovs
+        //   -2, -2.5... menos <-----  0 ----> mas 
+        // Algoritmo pasos numero negativos apra devolver solo los positivos:
+        // 1.I dentificar los numeros
+        // 2. de esos numeros ver cual num < 0
+        // 3. return num >= 0
+
+        /*
+        java y javascript  ----> Ambos son lenguages
+        POO --programacion orientada a objetos 
+        Javascript y Python son lenguages script, dimanicos
+        Java , C++, C son tipado, compilado
+
+          variable -- estefania
+          tipos de datos ---niki , int , float, string , boolean
+          que es un condicion --- estefania entrada y salida 
+          que es un algoritmo -- niki aplauso en texto
+          que es una asignacion - y declaracion - niki
+
+        */
+
+     
+        function myFunction() {
+            trabajos = document.getElementById("trabajos").value;
+            examen = document.getElementById("examen").value;
+            parciales = document.getElementById("parciales").value;
+            res = ((trabajos * 0.15) + (examen * 0.30) + (parciales * 0.55))
+            document.getElementById("result").innerHTML = res;
+        }
+
+    </script>
+</body>
+
+</html>

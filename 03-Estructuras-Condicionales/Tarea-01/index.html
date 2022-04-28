@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form>
+
+    </form>
+</head>
+<body>
+    <script>
+        // variable declarada fuera de la funcion, global
+        let hourly = Number(prompt("how many hours did you work?"));
+
+        //funcion nombre () {}
+        function salary(){
+            
+            let extras = hourly - 40;
+            // ternary operator (condition) ? true : false
+            totalSalary =(hourly >= 40) ? ((hourly*16)+(extras*20))   :  (hourly*16);
+            return alert(`Because your worked ${hourly} hours, you will be pay $ ${totalSalary} dolars`)
+            
+        }
+
+        //llamar funcion con variable que cree por fuera anteriormente
+        salary(hourly)
+         
+
+    </script>
+</body>
+</html>

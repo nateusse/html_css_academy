@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        //l nombre, horas trabajadas y el valor de la hora.
+        let name, workedHours, hourly;
+        name = prompt("What is your name", "please insert name");
+        workedHours = parseInt(prompt(`${name}, how many hours did you work this week?`));
+        hourly = parseInt(prompt(` how much do you get pay by hour`));
+        //let confirmation = confirm(`${name}, Please confirm you worked ${workedHours} hours this week at ${hourly} per hour`);
+        let mate = (workedHours*hourly)
+        let res = alert(`${name}, You worked ${workedHours} hours this week at ${hourly} per hour, so your salary is $:${mate}`);
+
+        let div = document.createElement('div');
+        div.innerHTML = "<strong>Thanks for the info!</strong> Please pick up your payment in the office";
+        document.body.append(div);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+    <div class="container p-3 my-3 border bg-dark text-white">
+        <h1 class="jumbotron text-center my-5 text-decoration-underline">Parking Bill</h1>
+        <p class="text-center my-5 text-decoration-underline text-danger">Price per hour:$6</p>
+        <form class="form text-center ">
+            <label for="num"></label>Please insert your number ticket:</label><br>
+            <input type="text" id="num" name="num" placeholder="1234" required><br>
+            <p class="mt-3">Time:</p>
+            <div class="row-4">
+                <input class="col-2" type="text" id="hours" name="time" placeholder="hours" required>
+                <input class="col-2" type="text" id="minutes" name="time" placeholder="minutes" required>
+            </div>
+    </div>
+
+
+
+    <div class="col text-center mt-3">
+        <button type="reset " class="btn btn-danger text-center" onclick="resetForm()">Reset</button>
+        </form>
+        <button type="submit" class="btn btn-danger text-center" onclick="bill()">Click me</button>
+    </div>
+    </div>
+
+    <p class="col h1 text-center my-4 text-white" id="result"></p>
+    <script>
+        //half hour is 1 hour
+        //charge by hour
+
+       
+
+        function bill() {
+
+            //hours
+            var numHours = document.getElementById("hours").value;
+            resHours = parseInt(numHours)
+
+            //minutes
+            var numMinutes = document.getElementById("minutes").value;
+            numMinutes = parseInt(numMinutes)
+
+            //operation
+            resNum = (numMinutes >= 30 ? 6 : 0)
+            res = ((resHours * 6) + resNum)
+
+            //resultado
+            document.getElementById("result").innerHTML = "$ " + res;
+
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
